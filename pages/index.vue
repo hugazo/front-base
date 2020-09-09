@@ -9,12 +9,16 @@
           rel="noopener noreferrer"
           class="button--green"
         ) Homepage
-        a(
-          href="https://ciel.42devs.cl"
-          target="_blank"
-          rel="noopener noreferrer"
+        nuxt-link(
+          to="/demo"
           class="button--grey"
-        ) Demo
+          ) Demo
+        //- a(
+        //-   href="https://ciel.42devs.cl"
+        //-   target="_blank"
+        //-   rel="noopener noreferrer"
+        //-   class="button--grey"
+        //- ) Demo
 </template>
 
 <script>
