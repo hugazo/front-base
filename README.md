@@ -7,6 +7,8 @@
 - Bulma CSS
 - Axios
 - Eslint Airbnb - Base + Nuxt Recommended
+- NVM
+- Docker Production Build
 
 
 ## Dev Setup
@@ -50,3 +52,7 @@ $ docker image prune
 ## Further Documentation
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+## TODOS
+
+- Make a Docker Development Environment Without the need for node installed locally
