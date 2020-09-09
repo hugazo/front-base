@@ -1,4 +1,12 @@
-# nuxt-demo
+# 42devs-web-base
+
+## What does this have?
+
+Nuxt JS
+VueJS
+Bulma CSS
+Axios
+Eslint Airbnb - Base + Nuxt Recommended
 
 ## Build Setup
 
