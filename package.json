@@ -8,7 +8,10 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint": "yarn lint:js"
+    "lint": "yarn lint:js",
+    "image:build": "docker build --tag 42web-image .",
+    "image:clean": "docker image prune -f",
+    "image:run": "docker run -it --rm -d -p 8080:80 --name 42web 42web-image"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.0",
