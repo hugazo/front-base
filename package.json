@@ -9,9 +9,10 @@
     "generate": "nuxt generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "yarn lint:js",
-    "image:build": "docker build --tag 42web-image .",
+    "image:build": "docker build -t registry.gitlab.com/42devs-core/projects/front-base .",
+    "image:push": "docker push registry.gitlab.com/42devs-core/projects/front-base",
     "image:clean": "docker image prune -f",
-    "image:run": "docker run -it --rm -d -p 8080:80 --name 42web 42web-image"
+    "image:run": "docker run -it --rm -d -p 8080:80 --name 42web docker push registry.gitlab.com/42devs-core/projects/front-base"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.0",
