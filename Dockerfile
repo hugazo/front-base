@@ -10,5 +10,5 @@ RUN yarn generate
 
 # Static Server Build
 
-FROM sickp/alpine-nginx as SERVER
+FROM nginx:alpine as SERVER
 COPY --from=BUILD /nuxt/dist /etc/nginx/html
