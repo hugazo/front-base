@@ -11,4 +11,4 @@ RUN yarn generate
 # Static Server Build
 
 FROM nginx:alpine as SERVER
-COPY --from=BUILD /nuxt/dist /etc/nginx/html
+COPY --from=BUILD /nuxt/dist /usr/share/nginx/html
